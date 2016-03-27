@@ -248,6 +248,8 @@
         android:text="Click em algo.. estou esperando"
         android:id="@+id/resultado"
         android:layout_gravity="center"
-        android:textSize="40dp" />
+        android:textSize="40dp"
+        android:scrollbars = "vertical"
+        android:maxLines = "500" />
 
 </LinearLayout>

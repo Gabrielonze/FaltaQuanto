@@ -51,10 +51,10 @@ public class Main extends AppCompatActivity {
 
     public float pegarValor(TextView in){
         float ret;
-        if(in.getText().toString() == ""){
-            ret = 0f;
+        if(in.getText().toString().equals("")){
+            ret = 0F;
         } else {
-            ret = Float.valueOf(tva1.getText().toString());
+            ret = Float.valueOf(in.getText().toString());
         }
         return ret;
     }
@@ -91,7 +91,6 @@ public class Main extends AppCompatActivity {
         float n1 = ((a1 * pesoA1) + (p1 * pesoP1)) / (pesoA1 + pesoP1);
         float n2 = ((a2 * pesoA2) + (p2Nova * pesoP2)) / (pesoA2 + pesoP2);
         float mf = (n1 + n2) / 2;
-
         return mf;
     }
 
@@ -102,23 +101,26 @@ public class Main extends AppCompatActivity {
                 out = "Smart Guy.. Passou sem P2! Congrats! MF temp:"+calcularMF(0F);
             } else {
                 out = "P2 - Media";
-                for(float i = 0; i < 10; i += 0.1F) {
+                /*for(float i = 0; i < 10; i += 0.1F) {
                     float np2, mf;
                     BigDecimal bd = new BigDecimal(i).setScale(2, RoundingMode.HALF_EVEN);
                     np2 = bd.floatValue();
                     bd = new BigDecimal(calcularMF(i)).setScale(2, RoundingMode.HALF_EVEN);
                     mf = bd.floatValue();
-                    if(mf >= 5F) {
+                    if(mf == 5F){
                         out += "\n" + np2 + " - " + mf;
                     }
-                }
+
+                }*/
+                float np2,mf;
+                np2 = mf
             }
 
             resultado.setText(out);
             resultado.setMovementMethod(new ScrollingMovementMethod());
 
         } catch (Exception ex){
-            Toast toast2 = Toast.makeText(getApplicationContext(), "Errrr, deixa só a P2 faltando.. não sou adivinho.. ainda", Toast.LENGTH_LONG);
+            Toast toast2 = Toast.makeText(getApplicationContext(), ex.getMessage(), Toast.LENGTH_LONG);
             toast2.setGravity(Gravity.BOTTOM, 0, 0);
             toast2.show();
         }

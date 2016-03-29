@@ -114,7 +114,7 @@ public class Main extends AppCompatActivity {
                 }*/
                 float np2,mf;
                 np2 = mf
-            }
+            }//foda-se
 
             resultado.setText(out);
             resultado.setMovementMethod(new ScrollingMovementMethod());

@@ -114,7 +114,7 @@ public class Main extends AppCompatActivity {
                 }*/
                 float np2,mf;
                 np2 = mf
-            }//foda-se
+            }//foda-se foda-se song
 
             resultado.setText(out);
             resultado.setMovementMethod(new ScrollingMovementMethod());

@@ -112,9 +112,8 @@ public class Main extends AppCompatActivity {
                     }
 
                 }*/
-                float np2,mf;
-                np2 = mf
-            }//foda-se foda-se song
+                out = "precisa tirar "+((5 *(pesoA2+pesoP2) - a1*pesoA1)/pesoP2)+" na P2 para passar com 5.";
+            }
 
             resultado.setText(out);
             resultado.setMovementMethod(new ScrollingMovementMethod());

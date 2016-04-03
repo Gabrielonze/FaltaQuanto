@@ -61,4 +61,4 @@ app/app.iml
 /build
 local.properties
 FaltaQuanto.iml
-
+build/intermediates/dex-cache/cache.xml

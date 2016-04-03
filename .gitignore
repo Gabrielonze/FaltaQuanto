@@ -49,7 +49,10 @@ Temporary Items
 #Android Studio
 .gradle
 /local.properties
-/.idea/workspace.xml
-/.idea/libraries
+/.idea/*
+/.idea/libraries/*
 .DS_Store
 /build
+local.properties
+FaltaQuanto.iml
+

@@ -48,8 +48,13 @@ Temporary Items
 
 #Android Studio
 .gradle
+.gradle/*
 /local.properties
 /.idea/*
+.idea/gradle.xml
+.idea/misc.xml
+.idea/modules.xml
+app/app.iml
 /.idea/libraries/*
 .idea/workspace.xml
 .DS_Store

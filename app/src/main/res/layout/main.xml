@@ -250,6 +250,7 @@
         android:layout_gravity="center"
         android:textSize="40dp"
         android:scrollbars = "vertical"
-        android:maxLines = "500" />
+        android:maxLines = "500"
+        android:textAlignment="center" />
 
 </LinearLayout>

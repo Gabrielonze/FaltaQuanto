@@ -51,6 +51,7 @@ Temporary Items
 /local.properties
 /.idea/*
 /.idea/libraries/*
+.idea/workspace.xml
 .DS_Store
 /build
 local.properties
